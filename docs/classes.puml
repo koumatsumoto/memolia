@@ -1,0 +1,49 @@
+@startuml
+
+class Term {
+  episodes
+}
+
+class Episode {
+  links
+}
+
+class Situation {
+  time
+  location
+  activity
+}
+
+class Context {
+  terms
+}
+
+class Link {
+  destinationTerm
+  parentEpisode
+}
+
+class Meta {
+  rank
+  level
+}
+
+class Declaration {
+  text
+  activeEpisodes
+}
+
+Term "1" o-- "n" Episode
+Term "1" o-- "1" Declaration
+
+Episode "1" o-- "n" Link
+Episode "1" o-- "1" Situation
+Episode "1" o-- "1" Context
+Episode "1" o-- "1" Meta
+
+Context "1" o-- "n" Term
+
+Link "1" o-- "1" Term
+Link "1" o-- "1" Episode
+
+@enduml

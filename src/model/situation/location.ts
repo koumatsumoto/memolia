@@ -11,7 +11,7 @@ export type Area = Brand<string, 'Area'>;
  */
 export const getArea = (coordinates: Coordinates): Area => {
   return '' as Area;
-}
+};
 
 export class Location {
   readonly area: Area;

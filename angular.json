@@ -1,8 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "yarn",
+    "analytics": "ccc5c937-86af-41ab-8fd2-08667ce1f4b8"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -126,6 +127,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "memolia"
 }

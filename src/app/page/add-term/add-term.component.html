@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="termForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label
+        >Term
+        <input type="text" [formControl]="termControl" />
+      </label>
+    </div>
+    <div>
+      <button class="button" type="submit">ADD</button>
+    </div>
+  </form>
+</div>

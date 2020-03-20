@@ -6,8 +6,6 @@ export type Area = Brand<string, 'Area'>;
  * TODO: not implemented
  *
  * Determine area name such as "tokyo", "shibuya" by coordinates.
- *
- * @param coordinates
  */
 export const getArea = (coordinates: Coordinates): Area => {
   return '' as Area;

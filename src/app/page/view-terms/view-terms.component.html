@@ -1,0 +1,7 @@
+<div>
+  <ul>
+    <li *ngFor="let term of terms">
+      <a [routerLink]="'./' + term.name">{{ term.name }}</a>
+    </li>
+  </ul>
+</div>

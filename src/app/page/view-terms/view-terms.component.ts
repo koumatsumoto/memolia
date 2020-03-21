@@ -3,7 +3,6 @@ import { Term } from '../../../model/memory/term';
 import { DatabaseService } from '../../service/database.service';
 
 @Component({
-  selector: 'app-view-terms',
   templateUrl: './view-terms.component.html',
   styleUrls: ['./view-terms.component.scss'],
 })

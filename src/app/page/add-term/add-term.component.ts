@@ -7,7 +7,6 @@ import { DatabaseService } from '../../service/database.service';
 const termFormControlName = 'term';
 
 @Component({
-  selector: 'app-add-term',
   templateUrl: './add-term.component.html',
   styleUrls: ['./add-term.component.scss'],
 })

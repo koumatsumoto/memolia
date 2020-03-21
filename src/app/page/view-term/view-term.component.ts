@@ -5,7 +5,6 @@ import { Term } from '../../../model/memory/term';
 import { DatabaseService } from '../../service/database.service';
 
 @Component({
-  selector: 'app-view-term',
   templateUrl: './view-term.component.html',
   styleUrls: ['./view-term.component.scss'],
 })

@@ -1,5 +1,5 @@
-import { Compilation } from './compilation';
 import { Situation } from '../situation/situation';
+import { Compilation } from './compilation';
 
 /**
  * contextable description of term

@@ -1,5 +1,5 @@
-import { Location } from './location';
 import { Activity } from './activity';
+import { Location } from './location';
 
 /**
  * Describe episodes in terms of when, where, what doing

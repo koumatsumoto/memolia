@@ -1,6 +1,6 @@
+import { NonEmptyString } from '../../common/type';
 import { Definition } from './definition';
 import { Episode } from './episode';
-import { NonEmptyString } from '../../common/type';
 
 const validateEmptyString = (val: string): NonEmptyString => {
   if (val.length === 0) {

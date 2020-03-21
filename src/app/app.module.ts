@@ -1,12 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { AddTermComponent } from './page/add-term/add-term.component';
-import { ViewTermsComponent } from './page/view-terms/view-terms.component';
 import { ViewTermComponent } from './page/view-term/view-term.component';
+import { ViewTermsComponent } from './page/view-terms/view-terms.component';
 
 @NgModule({
   declarations: [AppComponent, AddTermComponent, ViewTermsComponent, ViewTermComponent],

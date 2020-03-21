@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Term } from '../../../model/memory/term';
 import { DatabaseService } from '../../service/database.service';
-import { Router } from '@angular/router';
 
 const termFormControlName = 'term';
 

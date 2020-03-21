@@ -2,16 +2,18 @@
   "name": "memolia",
   "version": "0.0.0",
   "scripts": {
-    "format": "yarn :lint:ts --fix && yarn :lint:scss --fix && yarn :lint:ng --fix && prettier --config .prettierrc --write '{docs,e2e,src}/**/*.{ts,js,json,scss,html,md,yml}' ./*.{md,js,json}",
+    "build": "ng build",
+    "check:diff": "git diff --exit-code --name-only .",
+    "ci": "yarn format && yarn check:diff && yarn build && yarn test",
+    "e2e": "ng e2e",
+    "format": "yarn :lint:ts --fix && yarn :lint:scss --fix && yarn :lint:ng --fix && prettier --config .prettierrc --write '{.circleci,docs,e2e,src}/**/*.{ts,js,json,scss,html,md,yml}' ./*.{md,js,json}",
+    "lint": "yarn :lint:ng && :lint:ts && :lint:scss",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
-    "lint": "yarn :lint:ng && :lint:ts && :lint:scss",
     ":lint:ng": "ng lint",
     ":lint:scss": "stylelint 'src/**/*.scss'",
-    ":lint:ts": "eslint 'src/**/*.ts'",
-    "e2e": "ng e2e"
+    ":lint:ts": "eslint 'src/**/*.ts'"
   },
   "private": true,
   "dependencies": {

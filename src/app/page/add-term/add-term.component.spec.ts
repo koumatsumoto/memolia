@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Router } from '@angular/router';
+import { DatabaseService } from '../../service/database.service';
 import { AddTermComponent } from './add-term.component';
 
 describe('AddTermComponent', () => {
@@ -9,6 +10,16 @@ describe('AddTermComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AddTermComponent],
+      providers: [
+        {
+          provide: DatabaseService,
+          useValue: {},
+        },
+        {
+          provide: Router,
+          useValue: {},
+        },
+      ],
     }).compileComponents();
   }));
 

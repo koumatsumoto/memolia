@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { DatabaseService } from '../../service/database.service';
 import { ViewTermsComponent } from './view-terms.component';
 
 describe('ViewTermsComponent', () => {
@@ -9,6 +9,12 @@ describe('ViewTermsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ViewTermsComponent],
+      providers: [
+        {
+          provide: DatabaseService,
+          useValue: {},
+        },
+      ],
     }).compileComponents();
   }));
 

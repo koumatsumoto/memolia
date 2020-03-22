@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Term } from '../../../model/memory/term';
-import { DatabaseService } from '../../service/database.service';
+import { Term } from '../../../../model/memory/term';
+import { DatabaseService } from '../../../service/database.service';
 
 @Component({
   templateUrl: './view-terms.component.html',

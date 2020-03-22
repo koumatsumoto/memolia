@@ -21,4 +21,8 @@ export class Term {
   constructor(name: string) {
     this.name = validateEmptyString(name);
   }
+
+  addEpisode(episode: Episode) {
+    this.episodes.push(episode);
+  }
 }

@@ -6,5 +6,10 @@ export class Block {
  * text of episode
  */
 export class Compilation {
-  blocks: Block[];
+  blocks: Block[] = [];
+
+  constructor(text: string) {
+    // TODO: parse text to block
+    this.blocks.push({ text });
+  }
 }

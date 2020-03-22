@@ -1,0 +1,15 @@
+section {
+  padding: 8px;
+
+  &:not(:first-of-type) {
+    margin-top: 8px;
+  }
+}
+
+.episode-viewer {
+  border-top: 1px solid;
+}
+
+.add-episode-form {
+  border-top: 1px solid;
+}

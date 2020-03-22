@@ -7,6 +7,11 @@ header {
     margin-right: 8px;
     text-decoration: none;
     border: 1px solid;
+    transition: 200ms;
+
+    &:hover {
+      background: #e9c8f3;
+    }
   }
 }
 

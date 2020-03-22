@@ -1,1 +1,29 @@
-<div>{{ term | json }}</div>
+<div *ngIf="term">
+  <section *ngIf="term.episodes.length" class="episode-viewer">
+    <div *ngFor="let ep of term.episodes">
+      <p>{{ ep.situation.time | date: 'short' }} {{ ep.situation.activity }}</p>
+      <p>{{ ep.compilation.blocks | json }}</p>
+    </div>
+  </section>
+
+  <section class="add-episode-form">
+    <form [formGroup]="episodeForm" (ngSubmit)="onSubmitEpisode()">
+      <div>
+        <input
+          type="text"
+          [formControl]="activityControl"
+          placeholder="Activity"
+        />
+      </div>
+      <div>
+        <textarea
+          [formControl]="episodeControl"
+          placeholder="Episode"
+        ></textarea>
+      </div>
+      <div>
+        <button class="button" type="submit">ADD</button>
+      </div>
+    </form>
+  </section>
+</div>

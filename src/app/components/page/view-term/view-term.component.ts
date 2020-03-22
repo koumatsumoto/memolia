@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { first } from 'rxjs/operators';
-import { Term } from '../../../model/memory/term';
-import { DatabaseService } from '../../service/database.service';
+import { Term } from '../../../../model/memory/term';
+import { DatabaseService } from '../../../service/database.service';
 
 @Component({
   templateUrl: './view-term.component.html',

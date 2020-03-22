@@ -11,11 +11,11 @@ import { DatabaseService } from '../../../service/database.service';
   styleUrls: ['./view-term.component.scss'],
 })
 export class ViewTermComponent implements OnInit {
-  term: Term;
+  term!: Term;
 
   episodeForm!: FormGroup;
-  episodeControl: FormControl;
-  activityControl: FormControl;
+  episodeControl!: FormControl;
+  activityControl!: FormControl;
 
   constructor(private readonly db: DatabaseService, private readonly route: ActivatedRoute) {}
 

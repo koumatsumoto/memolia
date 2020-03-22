@@ -14,7 +14,7 @@ export class AddTermComponent implements OnInit {
   constructor(private readonly db: DatabaseService, private readonly router: Router) {}
 
   termForm!: FormGroup;
-  termControl: FormControl;
+  termControl!: FormControl;
 
   ngOnInit() {
     this.termControl = new FormControl();

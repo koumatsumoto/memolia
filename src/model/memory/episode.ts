@@ -7,7 +7,7 @@ import { Compilation } from './compilation';
 export class Episode {
   readonly isRoot: boolean;
   readonly situation: Situation;
-  readonly context: Episode;
+  readonly context: Episode | null = null;
   readonly compilation: Compilation;
 
   constructor(param: { readonly root: boolean; readonly activity: string; readonly text: string }) {

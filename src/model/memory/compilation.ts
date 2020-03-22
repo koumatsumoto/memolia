@@ -1,5 +1,5 @@
 export class Block {
-  text: string;
+  text = '';
 }
 
 /**

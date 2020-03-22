@@ -16,6 +16,7 @@ export class Location {
   private readonly coordinates: Coordinates;
 
   constructor(coordinates: Coordinates) {
+    this.coordinates = coordinates;
     this.area = getArea(coordinates);
   }
 }

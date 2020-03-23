@@ -1,4 +1,4 @@
-import { extractReferences, makeBlock } from "./compilation";
+import { extractReferences, makeBlock } from './compilation';
 
 describe('compilation internal functions', () => {
   describe('extractReferences', () => {

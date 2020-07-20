@@ -38,16 +38,24 @@ export type Episode = {
 //   * 重なった部分はNameで一意に定まる
 //   * インプット／アウトプットの方向があり、それぞれが up/down に対応する
 export type Node = {
-  id: ID<'Node'>;
+  id: ID<'node'>;
   name: string;
   up: Node[];
   down: Node[];
 };
 
-// 表現：一つ一つの投稿
-export type Memory = {
+// 表現：一つ一つの投稿をエピソードを基準に見たときのVIEW
+export type EpisodicMemory = {
+  id: ID<'episodic-memory'>;
   episode: Episode;
-  nodes: Node[];
+  contents: Node[];
+};
+
+// 表現：一つ一つの投稿を理を基準に見たときのVIEW
+export type SemanticMemory = {
+  id: ID<'semantic-memory'>;
+  semanteme: string;
+  contents: [Episode, Node][];
 };
 
 // Memoryから構築可能

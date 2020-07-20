@@ -1,7 +1,7 @@
 export type ID<T extends string> = {
   type: T;
   value: string;
-}
+};
 
 export type Line<T extends string = ''> = {
   id: ID<'line'>;
@@ -19,19 +19,19 @@ export type Situation = {
   why: string | null;
   who: string | null;
   what: string | null;
-}
+};
 
 export type Memorandum = {
   id: ID<'episode'>;
   line: Line<'episode'>;
   text: string;
-}
+};
 
 export type Episode = {
   id: ID<'episode'>;
   situation: Situation;
   memorandums: Memorandum[];
-}
+};
 
 // 表現
 // * Lineの重なった部分
@@ -48,10 +48,10 @@ export type Node = {
 export type Memory = {
   episode: Episode;
   nodes: Node[];
-}
+};
 
 // Memoryから構築可能
-export type NodeToLines = Map<Node, Line[]>
-export type LineToNode = Map<Line, Node[]>
-export type EpisodeToNode = Map<Node, Episode[]>
-export type NodeToEpisodes = Map<Episode, Node[]>
+export type NodeToLines = Map<Node, Line[]>;
+export type LineToNode = Map<Line, Node[]>;
+export type EpisodeToNode = Map<Node, Episode[]>;
+export type NodeToEpisodes = Map<Episode, Node[]>;
